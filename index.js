@@ -1,13 +1,13 @@
 const fs = require('fs'); 
 const inquirer = require('inquirer');
-const manager = require ('./lib/01manager'); 
-const engineer = require ('./lib/02engineer'); 
-const intern = require ('./lib/03intern');
-const managerQuestions = require('./lib/prompt-questions'); 
-const engineerQuestions = require('./lib/prompt-questions');
-const internQuestions = require('./lib/prompt-questions');
-const whatNextQuestions = require('./lib/prompt-questions');
-const generateHTML = require('./lib/generateHTML');
+const manager = require ('./lib/01manager.js'); 
+const engineer = require ('./lib/02engineer.js'); 
+const intern = require ('./lib/03intern.js');
+const managerQuestions = require('./lib/prompt-questions.js'); 
+const engineerQuestions = require('./lib/prompt-questions.js');
+const internQuestions = require('./lib/prompt-questions.js');
+const whatNextQuestions = require('./lib/prompt-questions.js');
+const generateHTML = require('./lib/generateHTML.js');
 
 
 const cards = []; 
