@@ -1,8 +1,5 @@
 const fs = require('fs'); 
 const inquirer = require('inquirer');
-//const manager = require ('./lib/01manager.js'); 
-//const engineer = require ('./lib/02engineer.js'); 
-//const intern = require ('./lib/03intern.js');
 const contact = require ('./lib/00contactCard.js'); 
 const {managerQuestions, engineerQuestions, internQuestions, whatNextQuestions} = require('./lib/prompt-questions.js'); //destructuring while importing 
 const generateHTML = require('./lib/generateHTML.js');
@@ -43,7 +40,7 @@ function init () {
 )};
 
 const whatNext = () => {   
-        inquirer.prompt(whatNextQuestions) // if engineer, if intern, if end 
+        inquirer.prompt(whatNextQuestions)
         .then((data) => {
 
             if (data.whatNext === "engineer")
