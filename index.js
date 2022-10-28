@@ -1,24 +1,26 @@
 const fs = require('fs'); 
 const inquirer = require('inquirer');
-const manager = require ('./lib/01manager.js'); 
-const engineer = require ('./lib/02engineer.js'); 
-const intern = require ('./lib/03intern.js');
+//const manager = require ('./lib/01manager.js'); 
+//const engineer = require ('./lib/02engineer.js'); 
+//const intern = require ('./lib/03intern.js');
+const contact = require ('./lib/00contactCard.js'); 
 const {managerQuestions, engineerQuestions, internQuestions, whatNextQuestions} = require('./lib/prompt-questions.js'); //destructuring while importing 
 const generateHTML = require('./lib/generateHTML.js');
 
 const cards = []; 
 
 function init () {
+
     inquirer.prompt(managerQuestions)
     .then((data) => {
-        const managerEntry = new manager (data.name, data.id, data.email, data.officeNumber);
+        const managerEntry = new contact (data.name, data.id, data.email, data.extra, data.position);
         cards.push(managerEntry);
 
         if (data.select === "engineer")
             {inquirer.prompt(engineerQuestions)
             
                 .then((data) => {
-                    const engineerEntry = new engineer (data.name, data.id, data.email, data.github);
+                    const engineerEntry = new contact (data.name, data.id, data.email, data.extra, data.position);
                     cards.push(engineerEntry);
 
                     whatNext(); 
@@ -31,7 +33,7 @@ function init () {
             {inquirer.prompt(internQuestions)
                 
                 .then((data)=>{
-                    const internEntry = new intern (data.name, data.id, data.email, data.school);
+                    const internEntry = new contact (data.name, data.id, data.email, data.extra, data.position);
                     cards.push(internEntry);
 
                     whatNext();
@@ -48,7 +50,7 @@ const whatNext = () => {
                 {inquirer.prompt(engineerQuestions)
                 
                     .then((data) => {
-                        const engineerEntry = new engineer (data.name, data.id, data.email, data.github);
+                        const engineerEntry = new contact (data.name, data.id, data.email, data.extra, data.position);
                         cards.push(engineerEntry);
 
                         whatNext(); 
@@ -59,7 +61,7 @@ const whatNext = () => {
             {inquirer.prompt(internQuestions)
                 
                 .then((data)=>{
-                    const internEntry = new intern (data.name, data.id, data.email, data.school);
+                    const internEntry = new contact (data.name, data.id, data.email, data.extra, data.position);
                     cards.push(internEntry);
 
                     whatNext();
