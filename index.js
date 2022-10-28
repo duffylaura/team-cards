@@ -20,9 +20,11 @@ function init () {
                 .then((data) => {
                     const engineerEntry = new engineer (data.name, data.id, data.email, data.github);
                     cards.push(engineerEntry);
+
+                    whatNext(); 
                 })
 
-            whatNext(); 
+            
             }
 
         else if (data.select === "intern")
@@ -31,8 +33,9 @@ function init () {
                 .then((data)=>{
                     const internEntry = new intern (data.name, data.id, data.email, data.school);
                     cards.push(internEntry);
+
+                    whatNext();
                 }) 
-            whatNext();
             }
     }
 )};
@@ -47,9 +50,9 @@ const whatNext = () => {
                     .then((data) => {
                         const engineerEntry = new engineer (data.name, data.id, data.email, data.github);
                         cards.push(engineerEntry);
-                    })
 
-                whatNext(); 
+                        whatNext(); 
+                    })
                 }
 
             else if (data.whatNext === "intern")
@@ -58,8 +61,9 @@ const whatNext = () => {
                 .then((data)=>{
                     const internEntry = new intern (data.name, data.id, data.email, data.school);
                     cards.push(internEntry);
+
+                    whatNext();
                 }) 
-            whatNext();
             }
 
             else if (data.whatNext === "end")
