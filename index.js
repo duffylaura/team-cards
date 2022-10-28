@@ -3,12 +3,8 @@ const inquirer = require('inquirer');
 const manager = require ('./lib/01manager.js'); 
 const engineer = require ('./lib/02engineer.js'); 
 const intern = require ('./lib/03intern.js');
-const managerQuestions = require('./lib/prompt-questions.js'); 
-const engineerQuestions = require('./lib/prompt-questions.js');
-const internQuestions = require('./lib/prompt-questions.js');
-const whatNextQuestions = require('./lib/prompt-questions.js');
+const {managerQuestions, engineerQuestions, internQuestions, whatNextQuestions} = require('./lib/prompt-questions.js'); //destructuring while importing 
 const generateHTML = require('./lib/generateHTML.js');
-
 
 const cards = []; 
 
