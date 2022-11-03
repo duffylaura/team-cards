@@ -8,8 +8,7 @@
 * The motivation behind this project was to generate a webpage for a manager that displays their team's basic info, so that they have quick access to their emails and GitHub profiles. 
 * Every manager needs to be organized and have quick access to their team's information - this application solves that problem!
 * This project made use of JavaScript, Node.js,  Jest, Inquirer, Classes, HTML and used BULMA for styling. 
-
-[Link to video demo-ing the application](https://www.youtube.com/watch?v=Ajdsp6RRq-w).
+* [Link to video demo-ing the application](https://www.youtube.com/watch?v=Ajdsp6RRq-w).
     
   ## Table of Contents
   - [Installation](#installation)
