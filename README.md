@@ -7,7 +7,7 @@
 * This application allows you to generate contact cards for your team. Currently set up for a team structure of having a manager with engineers and interns. But, it could be adapted to any team's specifications. 
 * The motivation behind this project was to generate a webpage for a manager that displays their team's basic info, so that they have quick access to their emails and GitHub profiles. 
 * Every manager needs to be organized and have quick access to their team's information - this application solves that problem!
-* This project made use of JavaScript, Node.js,  Jest, Inquirer, Classes, HTML and used BULMA for styling. 
+* This project made use of JavaScript, Node.js, npm, Jest, Inquirer, Classes, HTML and used BULMA for styling. 
 * [Link to video demo-ing the application](https://www.youtube.com/watch?v=Ajdsp6RRq-w).
     
   ## Table of Contents
@@ -20,11 +20,11 @@
 
   ## Installation
 
-  The user should do an npm install. Then type the command node index.js and follow the prompts. The generated HTML can be found in the dist folder. 
+  The user should do an *npm install*. Then type the command *node index.js* and follow the prompts. The generated HTML can be found in the dist folder. 
     
   ## Usage
 
-  To use the application enter node index.js in the CLI. Follow all prompts. 
+  To use the application enter *node index.js* in the CLI. Follow all prompts. 
     
   ## License
 
@@ -40,7 +40,7 @@
 
   ## Tests 
 
-  Tests can be found in the tests folder. To run the tests enter npm run test in the terminal. 
+  Tests can be found in the tests folder. To run the tests enter *npm run test* in the terminal. 
     
   ## Questions
 
