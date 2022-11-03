@@ -18,13 +18,13 @@
   - [Tests](#tests)
   - [Questions](#questions)
 
-  ## Installation
+  ## Installation 
 
-  The user should do an *npm install*. Then type the command *node index.js* and follow the prompts. The generated HTML can be found in the dist folder. 
+  The user should do an `npm install`. Then type the command `node index.js` and follow the prompts. The generated HTML can be found in the dist folder. 
     
   ## Usage
 
-  To use the application enter *node index.js* in the CLI. Follow all prompts. 
+  To use the application, enter `node index.js` in the terminal. Follow all prompts. The generated HTML can be found in the dist folder.
     
   ## License
 
@@ -33,14 +33,14 @@
   For more information on this license, please visit [this link](https://opensource.org/licenses/MIT).
    
   ## Contributing 
-
-  The following people collaborated on this project with me: N/A. 
+  
+  Laura Duffy is the only contributor of this project. 
 
   Interested in contributing!? There are many ways to contribute to this project. Get started [here](https://github.com/duffylaura/team-cards).
 
   ## Tests 
 
-  Tests can be found in the tests folder. To run the tests enter *npm run test* in the terminal. 
+  Tests can be found in the tests folder. There are 4 test suites and 20 tests total. To run the tests enter `npm run test` in the terminal. 
     
   ## Questions
 
