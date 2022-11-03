@@ -1,4 +1,4 @@
-const Engineer = require('../lib/02Engineer'); 
+const Engineer = require('../lib/02Engineer.js'); 
 
 describe ("Engineer", () => {
 
@@ -41,8 +41,8 @@ describe ("Engineer", () => {
     describe ("getRole", () => {
     it ("Should return the name of the Engineer's position", () => { 
         let obj = new Engineer ("Diana Taurasi", '#3', 'DianaTaurasi@theMercury.com', 'theGOAT');    
-        const result5 = obj.getRole; 
-        expect(result5).toEqual("Engineer")
+        const result5 = obj.getRole(); 
+        expect(result5).toEqual("Engineer");
         });    
     });
     

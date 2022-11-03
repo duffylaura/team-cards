@@ -1,4 +1,4 @@
-const contact = require('../lib/00contactCard');
+const contact = require('../lib/00contactCard.js');
 
 describe ("contact", () => {
 

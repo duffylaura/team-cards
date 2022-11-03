@@ -1,4 +1,4 @@
-const Manager = require('../lib/01Manager');
+const Manager = require('../lib/01Manager.js');
 
 describe ("Manager", () => {
 
@@ -41,7 +41,7 @@ describe ("Manager", () => {
     describe ("getRole", ()=>{
         it ("Should return manager's role, i.e. Manager.", () => {
                 var obj = new Manager ("A'ja Wilson", '#22', 'ajawilson@theLVaces.com', '1234');  
-                const result5 = obj.getRole;
+                const result5 = obj.getRole();
                 expect(result5).toEqual("Manager");
             });    
     });

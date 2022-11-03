@@ -1,4 +1,4 @@
-const Intern = require('../lib/03Intern');
+const Intern = require('../lib/03Intern.js');
 
 describe ("Intern", () => {
 
@@ -41,8 +41,8 @@ describe ("Intern", () => {
         describe ("getRole", () => {
         it ("Should return the name of the Intern's position", () => { 
             let obj = new Intern ("Nneka Ogwumike", '#30', 'nneka@theLASparks.com', 'Stanford WBB Alum');   
-            const result5 = obj.getRole; 
-            expect(result5).toEqual("Intern")
+            const result5 = obj.getRole(); 
+            expect(result5).toEqual("Intern");
             });    
         });
         
